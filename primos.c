@@ -75,13 +75,13 @@ bool isPrime(int n)
 
 int getPrimesInChunk(int begin, int end)
 {
-    int total = 0;
+    int total_local = 0;
     for (int i = begin; i <= end; i++)
     {
         if (isPrime(i) == true)
-            total++;
+            total_local++;
     }
-    return total;
+    return total_local;
 }
 
 // função para printar barra de progresso
